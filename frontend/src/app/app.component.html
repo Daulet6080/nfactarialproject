@@ -1,0 +1,18 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <a routerLink="/" class="logo-link">MyEventApp</a>
+    </div>
+    <ul class="nav-links">
+      <li><a routerLink="/" class="nav-item">Home</a></li>
+      <li><a routerLink="/events" class="nav-item">Events</a></li>
+      <li><a routerLink="/bookings" class="nav-item">Bookings</a></li>
+      <li><a routerLink="/login" class="nav-item">Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="welcome-message" *ngIf="username">
+  Welcome, {{ username }}!
+</div>
+<router-outlet></router-outlet>
+

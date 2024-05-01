@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #343a40;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo .logo-link {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  padding: 0 15px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+
+.welcome-message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}

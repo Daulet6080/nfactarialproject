@@ -1,0 +1,14 @@
+<div *ngIf="event; else loading">
+  <h2>{{ event.title }}</h2>
+  <p>{{ event.description }}</p>
+  <p><strong>Date:</strong> {{ event.date_time | date:'fullDate' }}</p>
+  <p><strong>Location:</strong> {{ event.location }}</p>
+  <p><strong>Available Seats:</strong> {{ event.available_seats }}</p>
+  <app-booking-form [event]="event"></app-booking-form>
+
+</div>
+
+
+<ng-template #loading>
+  <p>Loading event details...</p>
+</ng-template>

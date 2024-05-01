@@ -1,0 +1,44 @@
+        .event-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Adjust as needed */
+            gap: 20px;
+        }
+
+        .event-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .event-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .event-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .event-description {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .event-details {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .event-icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .heart-icon {
+            color: red;
+        }

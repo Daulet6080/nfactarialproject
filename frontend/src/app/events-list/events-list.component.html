@@ -1,0 +1,19 @@
+<div *ngIf="events.length > 0; else noEvents">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li *ngFor="let event of events">
+        <div>
+          <img *ngIf="event.event_image" [src]="event.event_image" alt="Event Image" style="width: 100px; height: auto;">
+          <h3>{{ event.title }}</h3>
+          <p>{{ event.description | slice:0:150 }}...</p>
+          <p><strong>Date:</strong> {{ event.date_time | date:'medium' }}</p>
+          <p><strong>Location:</strong> {{ event.location }}</p>
+          <a [routerLink]="['/events', event.id]">View Details</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <ng-template #noEvents>
+    <p>No upcoming events found.</p>
+  </ng-template>
+  
